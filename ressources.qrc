@@ -3,5 +3,9 @@
         <file>Hetero_icon.png</file>
         <file>homo_icon.png</file>
         <file>lesbian_icon.png</file>
+        <file>coeurRose.png</file>
+        <file>coeurRoseFoncé.png</file>
+        <file>coeurRouge.png</file>
+        <file>coeurRougeFoncé.png</file>
     </qresource>
 </RCC>

@@ -6,102 +6,208 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1179</width>
-    <height>694</height>
+    <width>1174</width>
+    <height>725</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QStackedWidget" name="main_stackedWidget">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>1161</width>
-      <height>641</height>
-     </rect>
-    </property>
-    <property name="currentIndex">
-     <number>0</number>
-    </property>
-    <widget class="QWidget" name="page">
-     <widget class="QWidget" name="verticalLayoutWidget">
-      <property name="geometry">
-       <rect>
-        <x>400</x>
-        <y>90</y>
-        <width>281</width>
-        <height>421</height>
-       </rect>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="main_stackedWidget">
+      <property name="currentIndex">
+       <number>1</number>
       </property>
-      <layout class="QVBoxLayout" name="orentationS_verticalLayout">
-       <item>
-        <widget class="QPushButton" name="hetero_pushButton">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset resource="ressources.qrc">
-           <normaloff>:/logos/Hetero_icon.png</normaloff>:/logos/Hetero_icon.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>64</width>
-           <height>64</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="homo_pushButton">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset resource="ressources.qrc">
-           <normaloff>:/logos/homo_icon.png</normaloff>:/logos/homo_icon.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>64</width>
-           <height>64</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="lesbi_pushButton">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset resource="ressources.qrc">
-           <normaloff>:/logos/lesbian_icon.png</normaloff>:/logos/lesbian_icon.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>64</width>
-           <height>64</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-      </layout>
+      <widget class="QWidget" name="page">
+       <widget class="QLabel" name="logo_label">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>90</y>
+          <width>231</width>
+          <height>75</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Rockwell Condensed</family>
+          <pointsize>48</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Love Tester</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>220</y>
+          <width>160</width>
+          <height>271</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="button_verticalLayout">
+         <item>
+          <widget class="QPushButton" name="hetero_pushButton">
+           <property name="toolTip">
+            <string>Hétérosexuelle</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="ressources.qrc">
+             <normaloff>:/logos/Hetero_icon.png</normaloff>:/logos/Hetero_icon.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>64</width>
+             <height>64</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="homo_pushButton">
+           <property name="toolTip">
+            <string>HomoSexuel</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="ressources.qrc">
+             <normaloff>:/logos/homo_icon.png</normaloff>:/logos/homo_icon.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>64</width>
+             <height>64</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="lesbi_pushButton">
+           <property name="toolTip">
+            <string>Lesbienne</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="ressources.qrc">
+             <normaloff>:/logos/lesbian_icon.png</normaloff>:/logos/lesbian_icon.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>64</width>
+             <height>64</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <zorder>logo_label</zorder>
+       <zorder>verticalLayoutWidget</zorder>
+       <zorder>verticalLayoutWidget</zorder>
+      </widget>
+      <widget class="QWidget" name="page_1">
+       <widget class="QLineEdit" name="hommeHetero_lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>300</y>
+          <width>231</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="femmeHetero_lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>300</y>
+          <width>231</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="hommeHetero_label">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>260</y>
+          <width>141</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Entrer le nom de l'homme</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="femmeHetero_label">
+        <property name="geometry">
+         <rect>
+          <x>720</x>
+          <y>260</y>
+          <width>151</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Entrer le nom de la femme</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="validerHetero_pushButton">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>440</y>
+          <width>271</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Valider</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="pourcentageAmour_label">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>100</y>
+          <width>221</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>26</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_2"/>
+      <widget class="QWidget" name="page_3"/>
+      <widget class="QWidget" name="page_4"/>
      </widget>
-    </widget>
-    <widget class="QWidget" name="page_2"/>
-    <widget class="QWidget" name="page_3"/>
-    <widget class="QWidget" name="page_4"/>
-   </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1179</width>
+     <width>1174</width>
      <height>21</height>
     </rect>
    </property>

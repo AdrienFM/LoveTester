@@ -19,6 +19,7 @@ public slots:
     void pageHetero();
     void pageHomo();
     void pageLesbi();
+    QString calculAmourHetero(QString h, QString f);
 
 private slots:
     void on_actionRetour_triggered();
