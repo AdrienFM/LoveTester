@@ -23,8 +23,77 @@
       <height>641</height>
      </rect>
     </property>
-    <widget class="QWidget" name="page"/>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>90</y>
+        <width>281</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="orentationS_verticalLayout">
+       <item>
+        <widget class="QPushButton" name="hetero_pushButton">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/logos/Hetero_icon.png</normaloff>:/logos/Hetero_icon.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="homo_pushButton">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/logos/homo_icon.png</normaloff>:/logos/homo_icon.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="lesbi_pushButton">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/logos/lesbian_icon.png</normaloff>:/logos/lesbian_icon.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
     <widget class="QWidget" name="page_2"/>
+    <widget class="QWidget" name="page_3"/>
+    <widget class="QWidget" name="page_4"/>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -44,10 +113,21 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="actionRetour"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionRetour">
+   <property name="text">
+    <string>Retour</string>
+   </property>
+   <property name="toolTip">
+    <string>Revenir au menu principal</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="ressources.qrc"/>
+ </resources>
  <connections/>
 </ui>

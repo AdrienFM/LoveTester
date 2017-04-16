@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/logos">
+        <file>Hetero_icon.png</file>
+        <file>homo_icon.png</file>
+        <file>lesbian_icon.png</file>
+    </qresource>
+</RCC>

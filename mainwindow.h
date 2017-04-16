@@ -15,6 +15,14 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+public slots:
+    void pageHetero();
+    void pageHomo();
+    void pageLesbi();
+
+private slots:
+    void on_actionRetour_triggered();
+
 private:
     Ui::MainWindow *ui;
 };
