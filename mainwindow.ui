@@ -189,13 +189,6 @@
          <string>Valider</string>
         </property>
        </widget>
-       <zorder>hommeHetero_label</zorder>
-       <zorder>hommeHetero_label</zorder>
-       <zorder>love_label</zorder>
-       <zorder>femmeHetero_label</zorder>
-       <zorder>hommeHetero_lineEdit</zorder>
-       <zorder>femmeHetero_lineEdit</zorder>
-       <zorder>validerHetero_pushButton</zorder>
       </widget>
       <widget class="QWidget" name="page_2">
        <widget class="QLabel" name="homme1_label">
@@ -351,7 +344,6 @@
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="page_4"/>
      </widget>
     </item>
    </layout>

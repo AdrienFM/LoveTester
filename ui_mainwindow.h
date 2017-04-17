@@ -63,7 +63,6 @@ public:
     QLineEdit *femme2_lineEdit;
     QPushButton *validerLesbi_pushButton;
     QLabel *loveLesbi_label;
-    QWidget *page_4;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -150,13 +149,6 @@ public:
         validerHetero_pushButton->setObjectName(QStringLiteral("validerHetero_pushButton"));
         validerHetero_pushButton->setGeometry(QRect(210, 510, 849, 81));
         main_stackedWidget->addWidget(page_1);
-        hommeHetero_label->raise();
-        hommeHetero_label->raise();
-        love_label->raise();
-        femmeHetero_label->raise();
-        hommeHetero_lineEdit->raise();
-        femmeHetero_lineEdit->raise();
-        validerHetero_pushButton->raise();
         page_2 = new QWidget();
         page_2->setObjectName(QStringLiteral("page_2"));
         homme1_label = new QLabel(page_2);
@@ -199,9 +191,6 @@ public:
         loveLesbi_label->setObjectName(QStringLiteral("loveLesbi_label"));
         loveLesbi_label->setGeometry(QRect(500, 160, 141, 111));
         main_stackedWidget->addWidget(page_3);
-        page_4 = new QWidget();
-        page_4->setObjectName(QStringLiteral("page_4"));
-        main_stackedWidget->addWidget(page_4);
 
         gridLayout->addWidget(main_stackedWidget, 0, 1, 1, 1);
 
@@ -230,7 +219,7 @@ public:
         QObject::connect(mainToolBar, SIGNAL(actionTriggered(QAction*)), loveLesbi_label, SLOT(clear()));
         QObject::connect(mainToolBar, SIGNAL(actionTriggered(QAction*)), femme2_lineEdit, SLOT(clear()));
 
-        main_stackedWidget->setCurrentIndex(3);
+        main_stackedWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -261,14 +250,14 @@ public:
         femmeHetero_label->setText(QApplication::translate("MainWindow", "Entrer le nom de la femme", Q_NULLPTR));
         validerHetero_pushButton->setText(QApplication::translate("MainWindow", "Valider", Q_NULLPTR));
         homme1_label->setText(QApplication::translate("MainWindow", "Entrer le nom de l'homme", Q_NULLPTR));
-        homme2_label->setText(QApplication::translate("MainWindow", "Entrer le nomde l'homme", Q_NULLPTR));
+        homme2_label->setText(QApplication::translate("MainWindow", "Entrer le nom de l'homme", Q_NULLPTR));
         loveHomo_label->setText(QString());
-        validerHomo_pushButton->setText(QApplication::translate("MainWindow", "PushButton", Q_NULLPTR));
+        validerHomo_pushButton->setText(QApplication::translate("MainWindow", "Valider", Q_NULLPTR));
         femme2_label->setText(QApplication::translate("MainWindow", "Entrer le nom de la femme", Q_NULLPTR));
         femme1_label->setText(QApplication::translate("MainWindow", "Entrer le nom de la femme", Q_NULLPTR));
         femme1_lineEdit->setText(QString());
         femme2_lineEdit->setText(QString());
-        validerLesbi_pushButton->setText(QApplication::translate("MainWindow", "PushButton", Q_NULLPTR));
+        validerLesbi_pushButton->setText(QApplication::translate("MainWindow", "Valider", Q_NULLPTR));
         loveLesbi_label->setText(QString());
     } // retranslateUi
 
